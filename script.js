@@ -7,3 +7,13 @@ function sendName(){
     var nameBox = document.getElementById("enter_name");
     alert("Hi, " + nameBox.value);
 }
+
+function convertToKilometer(){
+    
+    var distanceBox = document.getElementById("enter_miles");
+    var distanceInMiles = distanceBox.value;
+    var distanceInKilometer = distanceInMiles*1.6;
+    var displayBox = document.getElementById("displayBox");
+    displayBox.innerHTML = distanceInMiles +"miles is equal to " + distanceInKilometer + "kilometers";
+
+}
